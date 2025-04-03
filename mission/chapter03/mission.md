@@ -37,16 +37,27 @@
 
 ### 4. 미션 목록 조회
 
+1) 첫 조회 시
+
 | 항목            | 내용                                               |
 |-----------------|----------------------------------------------------|
 | API Endpoint    | `/user/{user_id}/mission`                          |
 | Method          | `GET`                                              |
 | Request Body    | x                                                  |
 | Request Header  | `Authorization = "Access Token"`                   |
-| query String    | `?completed=true` 또는 `?completed=false` (`enum`) |
+| query String    | ?completed = enum(’true’, ‘false’)
 | Path variable   | `user_id(Long)`                                    |
 
-
+2) 두 번째 이상 조회 시
+   
+| 항목            | 내용                                               |
+|-----------------|----------------------------------------------------|
+| API Endpoint    | `/user/{user_id}/mission`                          |
+| Method          | `GET`                                              |
+| Request Body    | x                                                  |
+| Request Header  | `Authorization = "Access Token"`                   |
+| query String    | ?completed = enum(’true’, ‘false’)&cursor-updated-at = 2024-02-28 |
+| Path variable   | `user_id(Long)`                                    |
 
 ### 5. 미션 성공 누르기
 
