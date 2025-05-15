@@ -10,4 +10,4 @@
     - 응답 포맷이 들쭉날쭉해질 위험
     - 예외 처리 로직의 일관성이 깨질 우려
 
-- 깃헙 링크 : https://github.com/eclipse021/8th_Spring_Practice_Mission (mission7 브런치)
+- 깃헙 링크 : https://github.com/eclipse021/8th_Spring_Practice_Mission (mission7 브런치, 시니어 미션 까지 완료했습니당) 
